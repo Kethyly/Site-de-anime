@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>One piece</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="imagens/logo.png" alt="bandeira do luffy" class="logo"></a>
+            <ul>
+                <li><a href="#" class="check">Chapeus de palha</a></li>
+                <li><a href="#">Piratas Coração</a></li>
+                <li><a href="#">Piratas Kid</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circulo"></div>
+            <div class="meio-texto">
+                <img src="imagens/one piece.png" alt="">
+                <h3>Viaje nessa aventura.</h3>
+                <p>One Piece é uma série de mangá escrita e ilustrada por Eiichiro Oda. onde conta a história de um 
+                    garoto chamado luffy que tem como inspiração seu amigo shanks(O ruivo)então ele decide
+                    se tornar o rei dos piratas junto com sua tripulação formidavel.
+                </p>
+                <h6>Atualmente o anime conta com mais de 1078 episódios</h6>
+            <div>
+                <a href= "class="botao"></a>
+                <a href="https://animesbr.cc/temporada/one-piece-temporada-1/"class="botao" target="_blank">Assistir</a>
+            </div>
+                <div class="texto">
+                    
+                    <h5>Tripulantes:</h5>
+                </div>
+                <div class="content">
+                    <span id="vermelho" onclick="imgSlider('imagens/Luffy.png'); circulocor(rgb(209, 40, 40))"></span>
+                    <span id="verde" onclick="imgSlider('imagens/Zoro.png'); circulocor('rgb(18, 102, 18)')"></span>
+                    <span id="laranja" onclick="imgSlider('imagens/nami.png'); circulocor('rgb(255, 167, 3)')"></span>
+                    <span id="marrom" onclick="imgSlider('imagens/usopp.png'); circulocor('#964b00')"></span>
+                    <span id="amarelo" onclick="imgSlider('imagens/sanji3.png'); circulocor('#e5e619')"></span>
+                </div>
+            </div>
+            <div class="meio-img">
+                <img src="imagens/Luffy.png" alt="Imagem do Luffy" id="Luffy">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        /*função para mudar os personagens*/
+        function imgSlider(e){
+            document.querySelector('#Luffy').src = e;
+        }
+
+        /*função para mudar a cor do circulo*/
+        function circulocor(color){
+            const circulo = document.querySelector('.circulo')
+            circulo.style.background = color;
+        }
+    </script>
+</body>
+</html>
